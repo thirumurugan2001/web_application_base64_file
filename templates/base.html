@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Convert Base64 to File and File to Base64{% endblock %}</title>
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+<body>
+    {% include 'includes/header.html' %}
+    
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    
+    {% include 'includes/footer.html' %}
+    
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/converter.js') }}"></script>
+</body>
+</html>

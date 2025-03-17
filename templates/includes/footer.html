@@ -1,0 +1,101 @@
+<!-- templates/includes/footer.html -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Base64 Converter</h3>
+            <p>A simple tool to convert between files and Base64 encoding.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('help') }}">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Base64 Converter. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 2rem 0 1rem;
+        margin-top: 3rem;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    .footer-section:last-child {
+        margin-right: 0;
+    }
+
+    .footer-section h3 {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-section p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+
+    .footer-bottom {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        border-top: 1px solid #34495e;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+        }
+
+        .footer-section {
+            margin-right: 0;
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>

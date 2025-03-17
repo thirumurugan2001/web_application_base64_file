@@ -1,0 +1,541 @@
+{% extends 'base.html' %}
+
+{% block title %}Help - Base64 Converter{% endblock %}
+
+{% block content %}
+<div class="help-container">
+    <div class="help-header">
+        <h1>Help Center</h1>
+        <p class="subtitle">Get answers to common questions about using the Base64 Converter</p>
+        <div class="divider"></div>
+    </div>
+        <div class="help-content">
+        <div class="help-sidebar">
+            <h3>Topics</h3>
+            <ul class="help-topics">
+                <li><a href="#basics" class="active">Basics</a></li>
+                <li><a href="#file-to-base64">File to Base64</a></li>
+                <li><a href="#base64-to-file">Base64 to File</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#privacy">Privacy & Security</a></li>
+            </ul>
+        </div>
+        
+        <div class="help-main">
+            <section id="basics" class="help-section">
+                <h2>Basics</h2>
+                
+                <div class="help-item">
+                    <h3>What is Base64?</h3>
+                    <p>Base64 is an encoding scheme that converts binary data into text format. It uses a set of 64 characters (A-Z, a-z, 0-9, + and /) to represent binary data. This makes it possible to transmit binary data across systems that only support text content.</p>
+                </div>
+                
+                <div class="help-item">
+                    <h3>Why use Base64?</h3>
+                    <p>Base64 encoding is useful when you need to:</p>
+                    <ul>
+                        <li>Include binary data in text-only formats (like JSON, XML)</li>
+                        <li>Transfer files through email or messaging systems</li>
+                        <li>Embed images directly in HTML/CSS as data URIs</li>
+                        <li>Store binary data in databases that don't support binary types well</li>
+                    </ul>
+                </div>
+                
+                <div class="help-item">
+                    <h3>What can I convert?</h3>
+                    <p>Our converter supports converting any file type to Base64 and back. Common uses include:</p>
+                    <ul>
+                        <li>Images (JPG, PNG, GIF, SVG)</li>
+                        <li>Documents (PDF, DOCX, TXT)</li>
+                        <li>Audio files (MP3, WAV)</li>
+                        <li>Video files (MP4, WEBM)</li>
+                        <li>And any other binary file</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="file-to-base64" class="help-section">
+                <h2>File to Base64</h2>
+                
+                <div class="help-item">
+                    <h3>How to convert a file to Base64</h3>
+                    <div class="help-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Select the "File to Base64" tab</h4>
+                                <p>This tab should be selected by default when you open the converter.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Choose a file</h4>
+                                <p>Click the "Choose File" button and select the file you want to convert from your device.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Convert</h4>
+                                <p>Click the "Convert to Base64" button to process your file.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Get your Base64 string</h4>
+                                <p>The Base64 representation of your file will appear in the output box. You can copy it to your clipboard by clicking the "Copy to Clipboard" button.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="help-item">
+                    <h3>File size limitations</h3>
+                    <p>Since the conversion happens in your browser, there are some practical limitations:</p>
+                    <ul>
+                        <li>File size should generally be under 50MB for optimal performance</li>
+                        <li>Very large files might cause your browser to slow down or become unresponsive</li>
+                        <li>Base64 encoding increases the data size by approximately 33%</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="base64-to-file" class="help-section">
+                <h2>Base64 to File</h2>
+                
+                <div class="help-item">
+                    <h3>How to convert Base64 to a file</h3>
+                    <div class="help-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Select the "Base64 to File" tab</h4>
+                                <p>Click on the "Base64 to File" tab at the top of the converter.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Paste your Base64 string</h4>
+                                <p>Paste the Base64 string into the input field. Make sure it doesn't contain any prefix like "data:image/png;base64,".</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Enter a filename</h4>
+                                <p>Specify the filename you want along with the appropriate extension (e.g., "image.png", "document.pdf").</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Convert</h4>
+                                <p>Click the "Convert to File" button to process your Base64 string.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Download your file</h4>
+                                <p>Click the "Download File" button to save the converted file to your device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="help-item">
+                    <h3>Tips for Base64 to File conversion</h3>
+                    <ul>
+                        <li>Make sure your Base64 string doesn't have any extra spaces or line breaks</li>
+                        <li>Include the correct file extension that matches the original file type</li>
+                        <li>If you're converting an image, you can include the data URI prefix (we'll handle it automatically)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="troubleshooting" class="help-section">
+                <h2>Troubleshooting</h2>
+                
+                <div class="help-item">
+                    <h3>Common Issues</h3>
+                    <div class="troubleshooting-item">
+                        <h4>Invalid Base64 error</h4>
+                        <p><strong>Problem:</strong> You get an "Error converting Base64 to file" message.</p>
+                        <p><strong>Solution:</strong> Check that your Base64 string doesn't contain invalid characters, spaces, or line breaks. It should only contain A-Z, a-z, 0-9, +, /, and = (as padding).</p>
+                    </div>
+                    
+                    <div class="troubleshooting-item">
+                        <h4>File doesn't open correctly</h4>
+                        <p><strong>Problem:</strong> The downloaded file doesn't open or appears corrupted.</p>
+                        <p><strong>Solution:</strong> Make sure you've specified the correct file extension that matches the original file type. Also check that the entire Base64 string was copied without truncation.</p>
+                    </div>
+                    
+                    <div class="troubleshooting-item">
+                        <h4>Slow performance with large files</h4>
+                        <p><strong>Problem:</strong> The browser becomes slow or unresponsive when converting large files.</p>
+                        <p><strong>Solution:</strong> Try using smaller files (under 50MB). If you need to convert larger files, consider using a desktop application designed for that purpose.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="faq" class="help-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my data secure when using this converter?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes. All conversion happens locally in your browser. Your files and data never leave your computer or get uploaded to any server.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Why is my Base64 string so long?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Base64 encoding increases the size of the original data by approximately 33%. This is because it uses 8 bits to represent 6 bits of data. The larger your original file, the longer the Base64 string will be.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use this tool offline?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, once the page has loaded, the converter will work without an internet connection. You can even save the page for offline use by using your browser's "Save As" feature.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What browsers are supported?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our converter supports all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. Make sure your browser is updated to the latest version for the best experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are there any file size limitations?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>There's no hard limit, but we recommend keeping files under 50MB for optimal performance since all processing happens in your browser. Larger files might cause your browser to slow down.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="privacy" class="help-section">
+                <h2>Privacy & Security</h2>
+                
+                <div class="help-item">
+                    <h3>Data Privacy</h3>
+                    <p>We take your privacy seriously. Here's how our converter protects your data:</p>
+                    <ul>
+                        <li><strong>Client-side processing:</strong> All conversion happens locally in your browser</li>
+                        <li><strong>No data transmission:</strong> Your files are never uploaded to any server</li>
+                        <li><strong>No data storage:</strong> We don't store any of your files or Base64 strings</li>
+                        <li><strong>No cookies:</strong> We don't use cookies to track your activity</li>
+                    </ul>
+                </div>
+                
+                <div class="help-item">
+                    <h3>Best Practices</h3>
+                    <p>For sensitive files, we recommend these additional precautions:</p>
+                    <ul>
+                        <li>Use a private/incognito browsing window</li>
+                        <li>Clear your browser history after conversion</li>
+                        <li>For highly sensitive data, consider using offline tools</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <div class="help-contact">
+                <h3>Still need help?</h3>
+                <p>If you couldn't find what you were looking for, please contact us:</p>
+                <a href="#contact" class="contact-button">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<style>
+    #help-search-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#help-search-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#help-search-button:hover {
+    background-color: #2980b9;
+}
+
+.help-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.help-sidebar {
+    flex: 0 0 200px;
+}
+
+.help-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.help-topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-topics li {
+    margin-bottom: 10px;
+}
+
+.help-topics a {
+    display: block;
+    padding: 8px 12px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.help-topics a:hover {
+    background-color: #f5f5f5;
+    color: #3498db;
+}
+
+.help-topics a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.help-main {
+    flex: 1;
+}
+
+.help-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.help-section:last-child {
+    border-bottom: none;
+}
+
+.help-section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.help-item {
+    margin-bottom: 25px;
+}
+
+.help-item h3 {
+    color: #34495e;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.help-item p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.help-item ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.help-item li {
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.help-steps {
+    margin-top: 15px;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h4 {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.troubleshooting-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.troubleshooting-item h4 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.faq-list {
+    margin-top: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #34495e;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.faq-answer {
+    padding-top: 15px;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .toggle-icon {
+    content: "-";
+}
+
+.help-contact {
+    background-color: #f7f9fa;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.help-contact h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .help-content {
+        flex-direction: column;
+    }
+    
+    .help-sidebar {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .help-topics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .help-topics li {
+        margin-bottom: 0;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin-bottom: 10px;
+    }
+}
+</style>
